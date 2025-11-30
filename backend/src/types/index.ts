@@ -13,6 +13,8 @@ export interface IUser {
   password: string;
   firstName: string;
   lastName: string;
+  referralCode?: string;
+  referredBy?: string | null;
   emailVerified: boolean;
   plan: PlanType;
   stripeCustomerId?: string;
@@ -99,6 +101,7 @@ export interface RegisterRequest {
   password: string;
   firstName: string;
   lastName: string;
+  referralCode?: string;
 }
 
 /**

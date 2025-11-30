@@ -2,6 +2,7 @@ import mongoose, { Schema, Model } from 'mongoose';
 import bcrypt from 'bcryptjs';
 import { IUser } from '../types';
 import { PlanType, PLANS } from '../config/plans';
+import { generateUniqueReferralCode } from '../utils/referral';
 
 interface UserMethods {
   comparePassword(candidatePassword: string): Promise<boolean>;
@@ -35,6 +36,17 @@ const userSchema = new Schema<IUser, UserModel, UserMethods>(
       type: String,
       required: true,
       trim: true
+    },
+    referralCode: {
+      type: String,
+      unique: true,
+      sparse: true,
+      uppercase: true,
+      trim: true
+    },
+    referredBy: {
+      type: String,
+      default: null
     },
     emailVerified: {
       type: Boolean,
@@ -76,6 +88,25 @@ const userSchema = new Schema<IUser, UserModel, UserMethods>(
     timestamps: true
   }
 );
+
+// Assign referral code on creation
+userSchema.pre('save', async function (next) {
+  if (!this.isNew || this.referralCode) {
+    return next();
+  }
+
+  try {
+    const referralCode = await generateUniqueReferralCode(8, async (code) => {
+      const existing = await this.model('User').exists({ referralCode: code });
+      return Boolean(existing);
+    });
+
+    this.referralCode = referralCode;
+    next();
+  } catch (error: any) {
+    next(error);
+  }
+});
 
 // Hash password before saving
 userSchema.pre('save', async function (next) {
@@ -146,6 +177,7 @@ userSchema.methods.consumeCredits = async function (amount: number): Promise<boo
 userSchema.index({ email: 1 });
 userSchema.index({ stripeCustomerId: 1 }, { sparse: true });
 userSchema.index({ 'credits.lastRefresh': 1 });
+userSchema.index({ referralCode: 1 }, { unique: true, sparse: true });
 
 const User = mongoose.model<IUser, UserModel>('User', userSchema);
 

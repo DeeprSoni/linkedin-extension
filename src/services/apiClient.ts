@@ -185,11 +185,18 @@ class APIClient {
     email: string,
     password: string,
     firstName: string,
-    lastName: string
+    lastName: string,
+    referralCode?: string
   ): Promise<{ message: string }> {
     return this.request('/auth/register', {
       method: 'POST',
-      body: JSON.stringify({ email, password, firstName, lastName })
+      body: JSON.stringify({
+        email,
+        password,
+        firstName,
+        lastName,
+        referralCode: referralCode?.trim() || undefined
+      })
     });
   }
 
