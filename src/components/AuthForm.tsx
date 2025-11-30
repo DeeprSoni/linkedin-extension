@@ -15,7 +15,8 @@ export const AuthForm: React.FC<AuthFormProps> = ({ onAuthSuccess }) => {
     email: '',
     password: '',
     firstName: '',
-    lastName: ''
+    lastName: '',
+    referralCode: ''
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,13 +47,14 @@ export const AuthForm: React.FC<AuthFormProps> = ({ onAuthSuccess }) => {
           formData.email,
           formData.password,
           formData.firstName,
-          formData.lastName
+          formData.lastName,
+          formData.referralCode
         );
         setSuccess('Registration successful! Please check your email to verify your account.');
         // Switch to login after successful registration
         setTimeout(() => {
           setIsLogin(true);
-          setFormData({ ...formData, firstName: '', lastName: '' });
+          setFormData({ ...formData, firstName: '', lastName: '', referralCode: '' });
         }, 3000);
       }
     } catch (err: any) {
@@ -70,7 +72,8 @@ export const AuthForm: React.FC<AuthFormProps> = ({ onAuthSuccess }) => {
       email: '',
       password: '',
       firstName: '',
-      lastName: ''
+      lastName: '',
+      referralCode: ''
     });
   };
 
@@ -107,6 +110,20 @@ export const AuthForm: React.FC<AuthFormProps> = ({ onAuthSuccess }) => {
                   required
                   style={styles.input}
                   placeholder="Doe"
+                />
+              </div>
+
+              <div style={styles.inputGroup}>
+                <label style={styles.label}>
+                  Referral Code <span style={styles.optional}>(Optional)</span>
+                </label>
+                <input
+                  type="text"
+                  name="referralCode"
+                  value={formData.referralCode}
+                  onChange={handleChange}
+                  style={styles.input}
+                  placeholder="e.g. FRIEND10"
                 />
               </div>
             </>
@@ -221,6 +238,10 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '14px',
     fontWeight: '500',
     color: '#555'
+  },
+  optional: {
+    color: '#888',
+    fontWeight: '400'
   },
   input: {
     padding: '10px 12px',

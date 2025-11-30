@@ -1,10 +1,11 @@
 import { Router, Request, Response } from 'express';
+import { HydratedDocument } from 'mongoose';
 import User from '../models/User';
 import { generateToken } from '../utils/jwt';
 import { validate, schemas } from '../middleware/validate';
 import { authenticate } from '../middleware/auth';
 import creditService from '../services/creditService';
-import { RegisterRequest, LoginRequest, LoginResponse, APIResponse, AuthRequest } from '../types';
+import { RegisterRequest, LoginRequest, LoginResponse, APIResponse, AuthRequest, IUser } from '../types';
 
 const router = Router();
 
@@ -17,7 +18,8 @@ router.post(
   validate(schemas.register),
   async (req: Request<{}, {}, RegisterRequest>, res: Response<APIResponse<{ message: string }>>) => {
     try {
-      const { email, password, firstName, lastName } = req.body;
+      const { email, password, firstName, lastName, referralCode } = req.body;
+      const normalizedReferralCode = referralCode?.trim().toUpperCase();
 
       // Check if user already exists
       const existingUser = await User.findOne({ email });
@@ -29,12 +31,26 @@ router.post(
         return;
       }
 
+      // Find referrer if code provided
+      let referrer: HydratedDocument<IUser> | null = null;
+      if (normalizedReferralCode) {
+        referrer = await User.findOne({ referralCode: normalizedReferralCode });
+        if (!referrer) {
+          res.status(400).json({
+            success: false,
+            error: 'Invalid referral code'
+          });
+          return;
+        }
+      }
+
       // Create user (email automatically verified)
-      await User.create({
+      const newUser = await User.create({
         email,
         password,
         firstName,
         lastName,
+        referredBy: referrer?._id?.toString() || null,
         emailVerified: true,
         plan: 'free',
         credits: {
@@ -44,6 +60,18 @@ router.post(
           warningsSent: []
         }
       });
+
+      // Apply referral bonus to both parties
+      if (referrer) {
+        const bonusCredits = 10;
+        referrer.credits.remaining += bonusCredits;
+        referrer.credits.dailyLimit += bonusCredits;
+        await referrer.save();
+
+        newUser.credits.remaining += bonusCredits;
+        newUser.credits.dailyLimit += bonusCredits;
+        await newUser.save();
+      }
 
       res.status(201).json({
         success: true,
@@ -116,7 +144,8 @@ router.post(
             firstName: user.firstName,
             lastName: user.lastName,
             plan: user.plan,
-            emailVerified: user.emailVerified
+            emailVerified: user.emailVerified,
+            referralCode: user.referralCode || null
           },
           credits: credits!
         }
@@ -157,7 +186,8 @@ router.get('/me', authenticate, async (req: AuthRequest, res: Response<APIRespon
           firstName: user.firstName,
           lastName: user.lastName,
           plan: user.plan,
-          emailVerified: user.emailVerified
+          emailVerified: user.emailVerified,
+          referralCode: user.referralCode || null
         },
         credits
       }

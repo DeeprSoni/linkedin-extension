@@ -6,7 +6,7 @@ module.exports = {
     content: './src/content/content.ts',
     background: './src/background/background.ts',
     popup: './src/popup/PopupApp.tsx',
-    sidepanel: './src/sidepanel/sidepanel.tsx'
+    sidepanel: './src/sidepanel/SidePanel.tsx'
   },
   module: {
     rules: [

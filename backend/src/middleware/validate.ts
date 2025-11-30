@@ -52,7 +52,13 @@ export const schemas = {
       'string.min': 'Last name must be at least 2 characters',
       'string.max': 'Last name must not exceed 50 characters',
       'any.required': 'Last name is required'
-    })
+    }),
+    referralCode: Joi.string()
+      .alphanum()
+      .min(6)
+      .max(14)
+      .uppercase()
+      .optional()
   }),
 
   login: Joi.object({
