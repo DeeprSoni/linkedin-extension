@@ -1,0 +1,103 @@
+CHROME EXTENSION PERMISSIONS RATIONALE
+
+This document explains each permission requested by the LinkedIn Connection Scanner extension and why it is necessary for functionality.
+
+---
+
+PERMISSIONS REQUESTED:
+
+1. "storage"
+   PURPOSE: Store prospect data, settings, and user preferences locally on the user's device
+   USAGE: Saves scanned LinkedIn profiles, tags, notes, message templates, and campaign data
+   DATA SCOPE: All data remains local; nothing is transmitted externally
+   JUSTIFICATION: Essential for persistence between browsing sessions
+
+2. "activeTab"
+   PURPOSE: Access the currently active LinkedIn tab to read profile information
+   USAGE: Reads publicly visible profile data from LinkedIn pages the user is currently viewing
+   DATA SCOPE: Only accesses pages when user explicitly clicks extension or scan button
+   JUSTIFICATION: Required to extract profile information for scanning feature
+
+3. "sidePanel"
+   PURPOSE: Display extension interface in Chrome's side panel
+   USAGE: Shows prospect list, filters, and management tools in dedicated side panel UI
+   DATA SCOPE: UI display only; no additional data access
+   JUSTIFICATION: Provides better user experience than popup with persistent, resizable interface
+
+4. "scripting"
+   PURPOSE: Inject content scripts into LinkedIn pages to enable scanning functionality
+   USAGE: Injects scanner button and profile extraction logic into LinkedIn.com pages
+   DATA SCOPE: Only executes on LinkedIn.com domains where user initiates action
+   JUSTIFICATION: Required to interact with LinkedIn's page structure and DOM elements
+
+---
+
+HOST PERMISSIONS REQUESTED:
+
+1. "https://www.linkedin.com/*"
+   PURPOSE: Access LinkedIn pages to read publicly visible profile information
+   USAGE: Extracts names, headlines, companies, locations, and mutual connection counts
+   DATA SCOPE: Only accesses information already visible to the logged-in user
+   JUSTIFICATION: Core functionality requires reading LinkedIn page content
+
+   IMPORTANT CLARIFICATIONS:
+   - Does NOT access LinkedIn's private API
+   - Does NOT capture or store login credentials
+   - Does NOT access private messages or non-public information
+   - Does NOT perform automated actions without explicit user input
+   - Does NOT send messages automatically (user must click and type manually)
+   - Only reads DOM elements of pages user is actively viewing
+
+---
+
+MINIMAL PERMISSIONS PRINCIPLE:
+
+This extension follows the principle of minimal permissions by:
+- Requesting only permissions essential for stated functionality
+- NOT requesting broad "tabs" permission (uses more specific "activeTab" instead)
+- NOT requesting "webRequest" or network interception capabilities
+- NOT requesting access to browsing history
+- NOT requesting access to other websites beyond LinkedIn
+- Storing all data locally (not requiring remote server access)
+
+---
+
+PERMISSION USAGE IN PRACTICE:
+
+When user clicks "Scan 2nd Connections":
+1. activeTab + scripting: Read current LinkedIn search/network page structure
+2. scripting: Extract visible profile information (name, headline, location, etc.)
+3. storage: Save extracted data to local Chrome storage
+4. sidePanel: Display scanned prospects in side panel interface
+
+When user views prospect list:
+1. storage: Retrieve saved prospect data from local storage
+2. sidePanel: Display data in side panel with filters and controls
+
+When user exports data:
+1. storage: Retrieve prospect data
+2. Generate CSV file (using standard browser download API, no special permission needed)
+
+When user clicks profile or "Message" button:
+1. NO special permissions used - standard navigation and clicks work without permission
+
+---
+
+DATA FLOW SUMMARY:
+
+LinkedIn Page → Content Script (reads DOM) → Local Storage → Side Panel Display
+                      ↓
+                  (No external transmission)
+
+All data processing happens locally on the user's device. No data is sent to external servers.
+
+---
+
+SECURITY CONSIDERATIONS:
+
+- All permissions are used exclusively for stated functionality
+- No data collection or telemetry
+- No third-party analytics or tracking
+- No remote code execution
+- All data remains on user's device unless explicitly exported by user
+- Extension does not communicate with any external servers

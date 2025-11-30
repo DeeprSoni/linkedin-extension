@@ -1,0 +1,123 @@
+LinkedIn Connection Scanner - Version 1.0.0 Release Notes
+==========================================================
+
+INITIAL RELEASE - January 2024
+
+LinkedIn Connection Scanner helps you efficiently scan and organize your 2nd degree LinkedIn connections for professional networking and outreach management.
+
+CORE FEATURES:
+
+SCANNING
+• Scan 2nd degree connections from LinkedIn People Search pages
+• Scan from LinkedIn My Network page
+• Automatic pagination - scan across multiple pages with one click
+• Configurable scan targets (10-1000 prospects)
+• Real-time progress tracking during scans
+• Smart duplicate detection
+
+DATA MANAGEMENT
+• All data stored locally on your device (complete privacy)
+• Capture: name, headline, company, location, mutual connections, profile URL
+• Add custom notes to any prospect
+• Create and assign tags for organization
+• Update status (new, contacted, replied, not interested)
+• Search and filter prospects by any field
+• Sort by name, date scanned, mutual connections, or custom fields
+
+EXPORT
+• Export all data to CSV format
+• Includes: Name, Headline, Company, Location, Mutual Connections, Profile URL, Status, Notes, Tags
+• Compatible with Excel, Google Sheets, and other tools
+• Perfect for CRM import or external analysis
+
+PRIVACY & SECURITY
+• Zero data transmission - everything stays on your device
+• No external servers or databases
+• No credential capture or API access
+• You have complete control over your data
+• Delete individual prospects or all data anytime
+• Uninstalling extension automatically removes all data
+
+USER EXPERIENCE
+• Clean, intuitive side panel interface
+• On-page scan button for easy access
+• Scan progress notifications
+• Helpful error messages and guidance
+• Responsive design works on all screen sizes
+
+COMPLIANCE
+• Full GDPR and CCPA compliance
+• Transparent privacy policy
+• Clear data disclosure
+• User data export and deletion controls
+
+GETTING STARTED:
+
+1. Install the extension from Chrome Web Store
+2. Navigate to LinkedIn People Search or My Network
+3. Click "Scan 2nd Connections" button
+4. Choose how many prospects to scan
+5. Manage prospects in the side panel
+6. Add notes, tags, and track outreach
+7. Export to CSV when needed
+
+SUPPORT:
+
+Questions or issues? Contact: deep@deepsoni.com
+Privacy Policy: [your-privacy-policy-url]
+Chrome Web Store: [your-extension-url]
+
+LEGAL:
+
+This extension is NOT affiliated with, endorsed by, or connected to LinkedIn Corporation or Microsoft Corporation. LinkedIn is a registered trademark of LinkedIn Corporation.
+
+Use responsibly and in accordance with LinkedIn's Terms of Service. This tool is designed to assist manual networking, not automate it.
+
+TECHNICAL:
+
+Built with: TypeScript, React, Chrome Manifest V3
+Minimum Chrome Version: 88+
+Permissions: storage, activeTab, sidePanel, scripting
+Host Permissions: linkedin.com
+
+Thank you for using LinkedIn Connection Scanner!
+
+---
+
+VERSION HISTORY:
+
+v1.0.0 (January 2024) - Initial release
+
+---
+
+FEEDBACK:
+
+Your feedback helps improve this extension. Please rate and review on the Chrome Web Store, or email suggestions to deep@deepsoni.com.
+
+Report bugs: deep@deepsoni.com
+Request features: deep@deepsoni.com
+Ask questions: deep@deepsoni.com
+
+We read every message and prioritize based on user feedback.
+
+---
+
+ROADMAP (Planned Features):
+
+Future versions may include:
+• Bulk messaging capabilities
+• CRM integrations
+• Advanced filtering and segmentation
+• Campaign tracking and analytics
+• Auto-sync with LinkedIn updates
+• Team collaboration features
+• Mobile companion app
+
+No guarantees on timing or implementation. Roadmap subject to change based on user demand and technical feasibility.
+
+---
+
+Thank you for being an early adopter of LinkedIn Connection Scanner!
+
+Deep Soni
+Developer

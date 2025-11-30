@@ -1,0 +1,309 @@
+CHROME WEB STORE DATA DISCLOSURE ANSWERS
+
+Copy and paste these answers into the Chrome Web Store Developer Dashboard data disclosure questionnaire.
+
+================================================================================
+SECTION 1: DATA COLLECTION
+================================================================================
+
+Question: Does this extension collect or transmit user data?
+Answer: YES (select "YES" because extension collects data, even though it's stored locally only)
+
+---
+
+Question: What types of data does your extension collect?
+Answer: Select the following categories:
+
+☑ Personally identifiable information
+  Examples: Name, profile information from LinkedIn
+
+☑ User activity
+  Examples: Scan history, interaction tracking with LinkedIn pages
+
+Note: Only select categories that apply. Do NOT select:
+- Financial information
+- Health information
+- Authentication information (we don't collect credentials)
+- Payment information
+- Personal communications (we don't access LinkedIn messages)
+
+---
+
+Question: Describe what data is collected:
+Answer (paste this):
+
+This extension collects LinkedIn profile information for prospects that users scan, including:
+
+- Name
+- Professional headline
+- Current company
+- Location
+- Number of mutual connections
+- Profile URL
+- Timestamp of when scanned
+
+User-generated data:
+- Status labels assigned by user (e.g., "contacted", "replied")
+- Notes written by user about prospects
+- Tags created and assigned by user
+- Message templates created by user
+- Campaign tracking data
+
+Usage statistics:
+- Number of profiles scanned
+- Last scan date
+- Count of new prospects
+
+All data is stored locally on the user's device using Chrome's local storage API. No data is transmitted to external servers or shared with third parties.
+
+================================================================================
+SECTION 2: DATA USAGE
+================================================================================
+
+Question: How is the collected data used?
+Answer: Select the following:
+
+☑ Providing or improving my extension's features
+☑ Other use cases
+
+For "Other use cases" explain:
+Organizing and displaying scanned LinkedIn profiles for user's personal CRM and outreach management.
+
+Do NOT select:
+- Analytics
+- Advertising or marketing
+- Selling to third parties
+- Personalization (unless your extension does this)
+
+---
+
+Question: Describe how you use the data:
+Answer (paste this):
+
+Data is used exclusively to:
+
+1. Display scanned LinkedIn profiles in an organized list within the extension interface
+2. Enable users to search, filter, and sort their prospect list
+3. Allow users to add notes, tags, and status updates to prospects
+4. Track message campaigns and outreach efforts
+5. Export prospect data to CSV format for external use
+6. Provide usage statistics (total scanned, last scan date)
+
+All processing occurs locally on the user's device. No data is sent to external servers or used for analytics, advertising, or any other purpose beyond the stated functionality.
+
+================================================================================
+SECTION 3: DATA TRANSFER
+================================================================================
+
+Question: Is any data transferred off the user's device?
+Answer: NO
+
+Even though data is local-only, if form requires explanation, use:
+
+Data is stored exclusively in Chrome's local storage on the user's device. No data is transmitted to external servers, third-party services, or the extension developers. The only way data leaves the device is if the user explicitly uses the "Export to CSV" feature to download their data.
+
+================================================================================
+SECTION 4: DATA RETENTION AND DELETION
+================================================================================
+
+Question: How long is data retained?
+Answer (paste this):
+
+Data is retained locally on the user's device indefinitely until the user:
+- Deletes individual prospects through the extension interface
+- Uses the "Clear All Data" function to delete all data at once
+- Uninstalls the extension (which automatically removes all local data)
+
+Users have complete control over data retention and can delete data at any time without contacting support.
+
+---
+
+Question: Can users request data deletion?
+Answer: YES, users can delete data themselves through the extension interface at any time
+
+---
+
+Question: How can users delete their data?
+Answer (paste this):
+
+Users can delete data in three ways:
+
+1. Delete individual prospects: Click the delete/trash icon next to any prospect in the extension interface
+
+2. Delete all data: Open extension settings and click "Clear All Data" button
+
+3. Complete removal: Uninstall the extension from Chrome, which automatically deletes all stored data
+
+No developer intervention is required. Users have immediate, complete control over data deletion.
+
+================================================================================
+SECTION 5: DATA SALE AND SHARING
+================================================================================
+
+Question: Do you sell or share user data with third parties?
+Answer: NO
+
+---
+
+Question: Is data shared with service providers?
+Answer: NO
+
+Explanation if required:
+No service providers are used. All data processing occurs locally on the user's device. No backend servers, analytics services, or third-party tools have access to user data.
+
+---
+
+Question: Is data used for advertising or marketing?
+Answer: NO
+
+================================================================================
+SECTION 6: DATA SECURITY
+================================================================================
+
+Question: What security measures are in place?
+Answer (paste this):
+
+Since all data is stored locally on the user's device using Chrome's secure local storage API:
+
+1. Data never leaves the user's device (except via explicit user export)
+2. Chrome's built-in storage encryption protects data at rest
+3. No network transmission means no interception risk
+4. No external servers means no server-side breach risk
+5. Extension code is reviewed by Chrome Web Store security team
+
+Users are advised to:
+- Keep Chrome browser updated
+- Use strong device passwords
+- Secure any exported CSV files appropriately
+
+================================================================================
+SECTION 7: PRIVACY POLICY
+================================================================================
+
+Question: Does your extension have a privacy policy?
+Answer: YES
+
+Question: Privacy policy URL:
+Answer: [Insert your hosted privacy policy URL]
+
+Note: Host the privacy-policy.html file on a publicly accessible website (your domain, GitHub Pages, etc.) and provide that URL.
+
+================================================================================
+SECTION 8: CERTIFICATION
+================================================================================
+
+Question: Do you certify that your extension complies with the Chrome Web Store Developer Program Policies?
+Answer: YES
+
+☑ I certify that the data disclosures I have provided are accurate and complete
+☑ I certify that this extension complies with the Chrome Web Store Developer Program Policies
+☑ I certify that this extension complies with applicable privacy laws and regulations
+
+================================================================================
+ADDITIONAL DISCLOSURES (if form has these fields)
+================================================================================
+
+Question: Does your extension handle financial or payment information?
+Answer: NO
+
+---
+
+Question: Does your extension handle health information?
+Answer: NO
+
+---
+
+Question: Does your extension handle authentication credentials?
+Answer: NO
+
+Explanation if required:
+The extension does not collect, store, or transmit any LinkedIn credentials. Users are already logged into LinkedIn in their browser; the extension only reads publicly visible information from pages the user is viewing.
+
+---
+
+Question: Does your extension use cookies or similar tracking technologies?
+Answer: NO
+
+Explanation if required:
+The extension uses Chrome's local storage API for data persistence but does not use cookies, tracking pixels, or any tracking technologies.
+
+---
+
+Question: Is this extension targeted at children under 13?
+Answer: NO
+
+Target audience:
+Professionals, business developers, recruiters, sales professionals, and LinkedIn power users (ages 18+)
+
+---
+
+Question: Does this extension comply with COPPA (Children's Online Privacy Protection Act)?
+Answer: N/A - Extension is not directed at children
+
+---
+
+Question: Does this extension comply with GDPR?
+Answer: YES
+
+Explanation:
+- Users have right to access (view all data in extension interface)
+- Users have right to deletion (delete function in settings)
+- Users have right to portability (CSV export function)
+- No data is processed on external servers
+- Users maintain complete control over their data
+
+---
+
+Question: Does this extension comply with CCPA?
+Answer: YES
+
+Explanation:
+- Users have right to know what data is collected (transparent in privacy policy)
+- Users have right to delete data (delete function available)
+- Data is not sold to third parties
+- Data is not shared with third parties
+- Users maintain complete control over their data
+
+================================================================================
+SINGLE USE PURPOSE STATEMENT
+================================================================================
+
+If the form requests a "Single Use Purpose" statement (required for sensitive permissions):
+
+This extension scans and organizes 2nd degree LinkedIn connections to help users manage professional networking and outreach. All collected data is stored locally on the user's device for personal CRM purposes. The extension reads publicly visible LinkedIn profile information from pages the user is actively viewing and stores it for later reference, filtering, and export.
+
+================================================================================
+JUSTIFICATION FOR SENSITIVE PERMISSIONS
+================================================================================
+
+If asked to justify specific permissions:
+
+PERMISSION: storage
+JUSTIFICATION: Store scanned prospect data, notes, tags, and user settings locally on device
+
+PERMISSION: activeTab
+JUSTIFICATION: Read publicly visible LinkedIn profile information from the active tab when user initiates a scan
+
+PERMISSION: scripting
+JUSTIFICATION: Inject scan button and profile extraction functionality into LinkedIn pages
+
+PERMISSION: sidePanel
+JUSTIFICATION: Display prospect list and management interface in persistent side panel
+
+HOST PERMISSION: https://www.linkedin.com/*
+JUSTIFICATION: Access LinkedIn pages to read publicly visible profile information. Extension only works on LinkedIn.com and does not access any other websites.
+
+================================================================================
+NOTES FOR DEVELOPER DASHBOARD
+================================================================================
+
+When filling out the form:
+
+1. Be consistent: Use the same wording across all fields
+2. Be specific: Don't use vague terms like "various data"
+3. Emphasize local storage: Repeatedly mention data stays on user's device
+4. Clarify no server transmission: Make it clear no backend exists
+5. Highlight user control: Users can view, export, and delete data anytime
+6. Be honest: If you add features that collect more data, update disclosures
+
+IMPORTANT: If you later add features that collect additional data types or transmit data externally, you MUST update these disclosures and resubmit for review.

@@ -1,0 +1,24 @@
+DISCLAIMER AND AFFILIATION NOTICE
+
+NOT AFFILIATED WITH LINKEDIN
+
+This Chrome extension is an independent tool and is NOT affiliated with, endorsed by, sponsored by, or connected to LinkedIn Corporation or Microsoft Corporation in any way.
+
+LinkedIn is a registered trademark of LinkedIn Corporation, a subsidiary of Microsoft Corporation. All LinkedIn trademarks, service marks, trade names, logos, and icons are proprietary to LinkedIn Corporation.
+
+This extension is provided as an independent productivity tool to help users organize publicly available information from LinkedIn's website. Use of this extension is at your own risk and subject to LinkedIn's Terms of Service and User Agreement.
+
+The developers of this extension make no warranties or representations about LinkedIn's services, policies, or terms. Users are solely responsible for ensuring their use of this extension complies with LinkedIn's Terms of Service.
+
+---
+
+USE AT YOUR OWN RISK
+
+This extension is provided "as is" without warranty of any kind. The developers shall not be liable for any damages arising from the use or inability to use this extension.
+
+LinkedIn may change their website structure, terms of service, or policies at any time, which could affect the functionality of this extension. Users should regularly review LinkedIn's Terms of Service to ensure compliance.
+
+By using this extension, you acknowledge that:
+1. You are responsible for your use of LinkedIn and this extension
+2. You will comply with all applicable LinkedIn policies and terms
+3. The extension developers are not responsible for any account restrictions, suspensions, or terminations that may result from your use of this tool

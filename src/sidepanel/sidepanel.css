@@ -1,0 +1,249 @@
+.sidepanel-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.header {
+  padding: 20px;
+  background: #0a66c2;
+  color: white;
+  border-bottom: 1px solid #004182;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+  gap: 8px;
+}
+
+.stat-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.stat-badge.new {
+  background: #057642;
+}
+
+.toolbar {
+  padding: 16px;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0a66c2;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filter-select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 13px;
+  background: white;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-secondary, .btn-danger {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: #f3f6f8;
+  color: #666;
+}
+
+.btn-secondary:hover {
+  background: #e8edf1;
+}
+
+.btn-danger {
+  background: #cc1016;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #a00e14;
+}
+
+.prospects-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty-state small {
+  font-size: 13px;
+  color: #999;
+}
+
+.prospect-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.prospect-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prospect-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.prospect-info {
+  flex: 1;
+}
+
+.prospect-name {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.prospect-name a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.prospect-name a:hover {
+  text-decoration: underline;
+}
+
+.prospect-headline {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.prospect-company {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.prospect-location {
+  font-size: 12px;
+  color: #666;
+}
+
+.prospect-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.mutual-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  background: #f3f6f8;
+  color: #666;
+}
+
+.prospect-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-primary-small {
+  padding: 8px 16px;
+  background: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary-small:hover {
+  background: #004182;
+}
+
+.status-select {
+  padding: 6px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 13px;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 6px 12px;
+  background: #f3f6f8;
+  color: #cc1016;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #ffe5e7;
+}

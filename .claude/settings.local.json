@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node create-icons.js:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(tree:*)",
+      "Bash(rm:*)",
+      "Bash(dir:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(mkdir:*)",
+      "Bash(powershell -Command \"Compress-Archive -Path ''linkedin-agent-extension'' -DestinationPath ''linkedin-agent-extension.zip'' -Force\")",
+      "Bash(curl:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(tar:*)",
+      "Bash(git log:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

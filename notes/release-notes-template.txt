@@ -1,0 +1,197 @@
+LinkedIn Connection Scanner - Version X.X.X Release Notes
+==========================================================
+
+Release Date: [Date]
+Release Type: [Bug Fix / Feature Release / Major Update]
+
+---
+
+SUMMARY:
+
+[1-2 sentence summary of what this update includes]
+
+Example:
+"Version 1.0.1 focuses on bug fixes and performance improvements based on early user feedback. This release improves scanning reliability and export functionality."
+
+---
+
+WHAT'S NEW:
+
+[List new features added in this version]
+
+Example:
+• New: Advanced filtering by company and location
+• New: Batch delete multiple prospects at once
+• New: Keyboard shortcuts for common actions
+
+---
+
+IMPROVEMENTS:
+
+[List enhancements to existing features]
+
+Example:
+• Faster profile scanning (30% performance improvement)
+• Better error messages during rate limiting
+• Improved scan button positioning on narrow screens
+• More reliable pagination detection
+
+---
+
+BUG FIXES:
+
+[List bugs fixed in this version]
+
+Example:
+• Fixed: CSV export not handling special characters correctly
+• Fixed: Pagination breaking on certain LinkedIn layouts
+• Fixed: Duplicate prospects appearing after multiple scans
+• Fixed: Search filter not working with certain keywords
+• Fixed: Side panel not opening on some Chrome versions
+
+---
+
+KNOWN ISSUES:
+
+[List any known issues that aren't fixed yet]
+
+Example:
+• Scan button may not appear immediately on slow connections (refresh page if needed)
+• Export may fail with extremely large datasets (>5000 prospects) - working on optimization
+
+---
+
+BREAKING CHANGES:
+
+[Only if applicable - list any changes that affect existing functionality]
+
+Example:
+• Data format updated - may require re-export if you use external tools
+• Previous CSV exports may not be compatible with new import feature
+
+---
+
+SECURITY:
+
+[Only if applicable - list security fixes]
+
+Example:
+• Fixed potential XSS vulnerability in notes field
+• Updated dependencies to patch security issues
+
+---
+
+UPGRADE NOTES:
+
+[Instructions for upgrading, if any special steps needed]
+
+Example:
+"Chrome will automatically update your extension within 24-48 hours. To update manually:
+1. Go to chrome://extensions
+2. Enable Developer mode
+3. Click 'Update' button"
+
+---
+
+DATA MIGRATION:
+
+[Only if applicable - if data structure changed]
+
+Example:
+"Your data will be automatically migrated to the new format when the extension updates. No action required. Backup recommended (Export to CSV before update)."
+
+---
+
+DEPRECATION NOTICES:
+
+[Only if applicable - features being removed or changed]
+
+Example:
+"The old export format will be removed in version 2.0.0 (expected Q2 2024). Please update any external tools to use the new format."
+
+---
+
+COMPATIBILITY:
+
+[Browser/OS compatibility notes if changed]
+
+Example:
+• Requires Chrome 88 or higher
+• Tested on Windows 10/11, macOS 12+, Linux
+• Compatible with Chrome, Edge, Brave, and other Chromium browsers
+
+---
+
+ACKNOWLEDGMENTS:
+
+[Thank contributors, bug reporters, feature requesters]
+
+Example:
+"Special thanks to:
+- John D. for reporting the CSV export bug
+- Sarah M. for suggesting the batch delete feature
+- All users who provided feedback and testing
+
+Your input makes this extension better!"
+
+---
+
+SUPPORT:
+
+Questions or issues with this update?
+Email: deep@deepsoni.com
+
+Found a bug?
+Email: deep@deepsoni.com with:
+- Chrome version
+- Steps to reproduce
+- Screenshots if applicable
+
+---
+
+PRIVACY:
+
+This release does not change data collection or privacy practices.
+Privacy Policy: [your-privacy-policy-url]
+
+[If privacy practices DID change, note that here and link to updated policy]
+
+---
+
+NEXT UP:
+
+[Preview what's coming in next release]
+
+Example:
+"Working on version 1.1.0 (expected February 2024):
+• CRM integration with Salesforce
+• Advanced search with boolean operators
+• Campaign performance analytics
+
+Follow development: [GitHub URL or blog]"
+
+---
+
+VERSION HISTORY:
+
+[Keep running list of recent versions]
+
+v1.0.2 (Date) - Bug fixes
+v1.0.1 (Date) - Performance improvements
+v1.0.0 (Date) - Initial release
+
+Full changelog: [Link to CHANGELOG.md]
+
+---
+
+FEEDBACK:
+
+Rate and review on Chrome Web Store: [Extension URL]
+
+Your feedback helps prioritize future development!
+
+---
+
+Deep Soni
+Developer, LinkedIn Connection Scanner
+deep@deepsoni.com

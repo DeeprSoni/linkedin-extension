@@ -1,0 +1,367 @@
+CHROME WEB STORE "WHAT'S NEW" TEMPLATES
+
+Max 500 characters. Keep concise and scannable.
+
+================================================================================
+TEMPLATE: BUG FIX RELEASE
+================================================================================
+
+Version X.X.X - Bug Fixes & Improvements
+
+FIXED:
+• [Bug 1 - short description]
+• [Bug 2 - short description]
+• [Bug 3 - short description]
+
+IMPROVED:
+• [Improvement 1]
+• [Improvement 2]
+
+Thank you for using LinkedIn Connection Scanner! Report issues: deep@deepsoni.com
+
+---
+
+EXAMPLE (132 characters):
+
+Version 1.0.1 - Bug Fixes
+
+FIXED:
+• Pagination on search pages
+• CSV export character handling
+• Scan button positioning
+
+Report issues: deep@deepsoni.com
+
+================================================================================
+TEMPLATE: FEATURE RELEASE
+================================================================================
+
+Version X.X.X - New Features!
+
+NEW:
+• [Feature 1 - what it does]
+• [Feature 2 - what it does]
+• [Feature 3 - what it does]
+
+IMPROVED:
+• [Improvement]
+
+Check out the new features in the extension side panel!
+
+---
+
+EXAMPLE (164 characters):
+
+Version 1.1.0 - New Features!
+
+NEW:
+• Advanced filtering by company and location
+• Batch delete multiple prospects
+• Keyboard shortcuts
+
+Try them in the side panel!
+
+================================================================================
+TEMPLATE: PERFORMANCE UPDATE
+================================================================================
+
+Version X.X.X - Performance Boost
+
+FASTER:
+• [X]% faster scanning
+• [X]% faster search/filtering
+• Reduced memory usage
+
+BUG FIXES:
+• [Bug 1]
+• [Bug 2]
+
+Your extension should feel noticeably snappier!
+
+---
+
+EXAMPLE (147 characters):
+
+Version 1.0.2 - Performance Boost
+
+• 40% faster scanning
+• 50% reduced memory usage
+• Faster search and filtering
+
+Fixed pagination issues. Enjoy the speed!
+
+================================================================================
+TEMPLATE: URGENT HOTFIX
+================================================================================
+
+Version X.X.X - Critical Bug Fix
+
+URGENT FIX:
+• [Critical issue that was breaking extension]
+
+We apologize for any inconvenience. The issue is now resolved.
+
+Thank you for your patience!
+
+---
+
+EXAMPLE (109 characters):
+
+Version 1.0.1 - Critical Fix
+
+URGENT FIX:
+• Resolved data loss issue affecting some users
+
+Sorry for the inconvenience!
+
+================================================================================
+TEMPLATE: LINKEDIN COMPATIBILITY UPDATE
+================================================================================
+
+Version X.X.X - LinkedIn Compatibility
+
+UPDATED:
+• Fixed compatibility with LinkedIn's new page layout
+• Scanning now works on updated search pages
+• All features fully functional
+
+No action needed - just a behind-the-scenes update!
+
+---
+
+EXAMPLE (138 characters):
+
+Version 1.0.3 - LinkedIn Updates
+
+• Updated for LinkedIn's new layout
+• Scanning works correctly again
+• All features functional
+
+Auto-update!
+
+================================================================================
+TEMPLATE: SECURITY UPDATE
+================================================================================
+
+Version X.X.X - Security Update
+
+SECURITY:
+• [Security issue fixed - describe vaguely, don't expose details]
+
+ALSO FIXED:
+• [Bug 1]
+• [Bug 2]
+
+We recommend updating immediately. Chrome will auto-update within 24 hours.
+
+---
+
+EXAMPLE (127 characters):
+
+Version 1.0.4 - Security Update
+
+• Fixed potential security issue
+• Updated dependencies
+• Bug fixes
+
+Update recommended!
+
+================================================================================
+TEMPLATE: MAJOR VERSION
+================================================================================
+
+Version X.0.0 - Major Update!
+
+BIG CHANGES:
+• [Major change 1]
+• [Major change 2]
+• [Major change 3]
+
+NEW:
+• [Feature 1]
+• [Feature 2]
+
+IMPROVED:
+• [Improvement 1]
+
+This is our biggest update yet. Check it out!
+
+---
+
+EXAMPLE (194 characters):
+
+Version 2.0.0 - Major Update!
+
+• Complete UI redesign
+• New CRM integrations
+• Campaign analytics
+• Bulk messaging tools
+• 2x faster scanning
+
+Our biggest update yet. Explore the new features!
+
+================================================================================
+TEMPLATE: INITIAL RELEASE (V1.0.0)
+================================================================================
+
+Version 1.0.0 - Now Available!
+
+Welcome to LinkedIn Connection Scanner!
+
+FEATURES:
+• Scan 2nd degree connections
+• Organize with notes and tags
+• Export to CSV
+• All data stored locally (private)
+
+Navigate to LinkedIn and click "Scan 2nd Connections" to get started!
+
+---
+
+EXAMPLE (191 characters):
+
+Version 1.0.0 - Welcome!
+
+• Scan LinkedIn 2nd connections
+• Organize with notes/tags
+• Export to CSV
+• 100% local storage (private)
+
+Go to LinkedIn → Click "Scan 2nd Connections"
+
+Happy networking!
+
+================================================================================
+TEMPLATE: USER-REQUESTED FEATURES
+================================================================================
+
+Version X.X.X - You Asked, We Delivered!
+
+Based on YOUR feedback:
+• [User-requested feature 1]
+• [User-requested feature 2]
+• [User-requested feature 3]
+
+Thank you for helping shape this extension!
+
+Keep the feedback coming: deep@deepsoni.com
+
+---
+
+EXAMPLE (168 characters):
+
+Version 1.2.0 - You Asked, We Delivered!
+
+• Batch actions (your #1 request!)
+• Dark mode
+• Custom tags
+• Export filters
+
+Thanks for the feedback! Keep it coming: deep@deepsoni.com
+
+================================================================================
+TEMPLATE: SEASONAL/SPECIAL
+================================================================================
+
+Version X.X.X - [Holiday] Update
+
+NEW:
+• [Feature]
+• [Feature]
+
+IMPROVED:
+• [Improvement]
+
+Happy [Holiday] from the LinkedIn Connection Scanner team!
+
+---
+
+EXAMPLE (158 characters):
+
+Version 1.3.0 - Happy Holidays!
+
+• New year, new features!
+• Campaign templates
+• Enhanced analytics
+• Performance boost
+
+Happy holidays from our team! 🎉
+
+================================================================================
+WRITING TIPS FOR "WHAT'S NEW"
+================================================================================
+
+DO:
+• Use bullet points (very scannable)
+• Lead with most impactful changes
+• Use action words: "Fixed", "Added", "Improved"
+• Be specific but concise
+• Group similar changes
+• Include version number
+• Add contact email if space allows
+
+DON'T:
+• Write paragraphs (too dense)
+• Use technical jargon
+• List every tiny change
+• Be vague ("various improvements")
+• Exceed 500 characters
+• Use emojis excessively
+• Overpromise or hype
+
+CHARACTER COUNTS:
+• Aim for 200-400 characters (leaves room for email)
+• Absolute max: 500 characters
+• Count includes spaces and punctuation
+• Test in character counter before submitting
+
+TESTING:
+Use this site to count: https://www.charactercountonline.com/
+
+Or in JavaScript console:
+document.getElementById('releaseNotes').value.length
+
+================================================================================
+VERSION-SPECIFIC EXAMPLES
+================================================================================
+
+v1.0.1 (Bug Fix):
+"Bug fixes: pagination detection, CSV export character encoding, scan button positioning. Improved: 30% faster scanning. Report issues: deep@deepsoni.com" (172 chars)
+
+v1.1.0 (Features):
+"NEW: Advanced filters (company, location), batch delete, keyboard shortcuts. IMPROVED: Faster search, better error messages. Explore the new features!" (154 chars)
+
+v1.0.5 (LinkedIn):
+"Updated for LinkedIn's latest layout changes. Scanning and pagination now work correctly on all page types. No action needed!" (127 chars)
+
+v2.0.0 (Major):
+"Major update! Complete UI redesign, CRM integrations (Salesforce, HubSpot), campaign analytics, bulk messaging, 2x performance. Check it out!" (145 chars)
+
+================================================================================
+SUBMISSION WORKFLOW
+================================================================================
+
+1. Write release notes (this file)
+2. Count characters
+3. Edit to fit under 500
+4. Copy final text
+5. Go to Chrome Web Store Developer Dashboard
+6. Click your extension → Package or Store Listing
+7. Find "What's new" field
+8. Paste text
+9. Preview
+10. Save and submit update
+
+================================================================================
+NOTES
+================================================================================
+
+Track what you've written for each version:
+
+v1.0.0: [What you wrote]
+v1.0.1: [What you wrote]
+v1.0.2: [What you wrote]
+
+This helps maintain consistent tone and avoid repetition.
+
+================================================================================
