@@ -30,9 +30,18 @@ if ps aux | grep -v grep | grep -q "ts-node src/index.ts"; then
     exit 1
 fi
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BACKEND_DIR="$SCRIPT_DIR/backend"
+
+if [ ! -d "$BACKEND_DIR" ]; then
+    echo "❌ Backend directory not found at $BACKEND_DIR"
+    echo "   Make sure you are running the script from the project root."
+    exit 1
+fi
+
 # Start backend
 echo "🔧 Starting backend server..."
-cd /root/linkedin-agent/backend
+cd "$BACKEND_DIR"
 nohup npm run dev > /tmp/linkedin-backend.log 2>&1 &
 BACKEND_PID=$!
 
