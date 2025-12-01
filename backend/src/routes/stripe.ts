@@ -1,15 +1,15 @@
 import { Router, Request, Response } from 'express';
 import Stripe from 'stripe';
-import { authenticate, AuthRequest } from '../middleware/auth';
+import { authenticate } from '../middleware/auth';
 import User from '../models/User';
-import { APIResponse, PlanType } from '../types';
+import { APIResponse, PlanType, AuthRequest } from '../types';
 import { PLANS } from '../config/plans';
 
 const router = Router();
 
 // Initialize Stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2024-11-20.acacia'
+  apiVersion: '2023-10-16'
 });
 
 /**

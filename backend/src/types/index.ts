@@ -1,5 +1,8 @@
 import { Request } from 'express';
-import { PlanType, ActionType } from '../config/plans';
+import { PlanType as PlanTypeDef, ActionType as ActionTypeDef } from '../config/plans';
+
+export type PlanType = PlanTypeDef;
+export type ActionType = ActionTypeDef;
 
 /**
  * User document interface
@@ -40,7 +43,12 @@ export interface IUsageHistory {
 /**
  * Extended Express Request with authenticated user
  */
-export interface AuthRequest extends Request {
+export interface AuthRequest<
+  P = any,
+  ResBody = any,
+  ReqBody = any,
+  ReqQuery = any
+> extends Request<P, ResBody, ReqBody, ReqQuery> {
   user?: {
     id: string;
     email: string;

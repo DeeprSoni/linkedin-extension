@@ -2,9 +2,9 @@ import { Router, Request, Response } from 'express';
 import User from '../models/User';
 import { generateToken } from '../utils/jwt';
 import { validate, schemas } from '../middleware/validate';
-import { authenticate, AuthRequest } from '../middleware/auth';
+import { authenticate } from '../middleware/auth';
 import creditService from '../services/creditService';
-import { RegisterRequest, LoginRequest, LoginResponse, APIResponse } from '../types';
+import { RegisterRequest, LoginRequest, LoginResponse, APIResponse, AuthRequest } from '../types';
 
 const router = Router();
 
@@ -30,7 +30,7 @@ router.post(
       }
 
       // Create user (email automatically verified)
-      const user = await User.create({
+      await User.create({
         email,
         password,
         firstName,

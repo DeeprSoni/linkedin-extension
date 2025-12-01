@@ -1,8 +1,8 @@
 import { Router, Response } from 'express';
-import { authenticate, AuthRequest } from '../middleware/auth';
+import { authenticate } from '../middleware/auth';
 import { validate, schemas } from '../middleware/validate';
 import creditService from '../services/creditService';
-import { APIResponse, ConsumeCreditsRequest } from '../types';
+import { APIResponse, ConsumeCreditsRequest, AuthRequest } from '../types';
 
 const router = Router();
 
